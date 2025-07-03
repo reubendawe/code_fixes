@@ -10,6 +10,9 @@
             --project-black: #000000;
             --project-white: #ffffff;
             --project-pink: #fb00ff;
+            --brand-primary: #150959;
+            --button-primary: #6ECFF6;
+            --button-secondary: #1A1464;
         }
 
         body {
@@ -18,6 +21,7 @@
 
         .container {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
@@ -29,6 +33,9 @@
             flex-direction: column;
             width: 600px;
             border-radius: 5px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin: 25px 0;
             background-color: var(--project-white);
         }
 
@@ -41,8 +48,40 @@
             padding-left: 5px; 
         }
 
-    @media (min-width: 530px) {
+        .button-bg {
+            background-color: var(--button-primary);
+            color: var(--button-secondary);
+        }
 
+        .no-font {
+            line-height: 1px;
+            font-size: 1px;
+        }
+
+        .purchase-banner {
+            background-color: var(--brand-primary);
+            color: var(--project-white);
+        }
+
+        .btn-primary {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+            background-color: var(--button-primary);
+            padding: 10px 26px;
+            border-radius: 10px;
+        }
+
+        .btn-primary a {
+            text-decoration: none;
+             color: var(--project-black);
+        }
+
+        .arrow-pad-right {
+            padding-right: 8px;
+        }
+
+    @media (min-width: 530px) {
         .mobile-only {
             display: none !important;
         }
@@ -50,74 +89,164 @@
     }
 
     @media (max-width: 530px) {
-
         .desktop-only {
             display: none !important;
         }
-
     }
 
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="container-two">
-            <h1>Hello</h1>
-            <p>test</p>
-    <tr>
-    <td align="center" class="grey-bg">
-    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+<div class="container">
 
-    <tr>
-    <td align="right" class="btn-pad-right desktop-only">
-    <a href="tel:01912962007">
-    <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button3.png?v=1748341397" width="190" class="img-fluid"
-    alt="Call our experts"/>
-    </a>
-    </td>
-    <td align="left" class="btn-pad-left desktop-only">
-    <a href="mailto:sales@gmpackaging.co.uk">
-    <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button4.png?v=1748341397" width="190" class="img-fluid"
-    alt="Email your enquiry"/>
-    </a>
-    </td>
-    </tr>
+    <!-- ################# Banner 1 ################# -->
 
-    <tr>
-    <td align="center" class="mobile-only">
-    <a href="tel:01912962007">
-    <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button3.png?v=1748341397" width="190" class="img-fluid"
-    alt="Call our experts"/>
-    </a>
-    </td>
-    </tr>
+    <div class="container-two">
 
-    <tr>
-        <td align="center" height="5">
+        <tr>
+            <td align="center">
+                <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/banner1_242ed54f-6f80-48e4-b968-ab4d2b14c770.jpg?v=1748009191" width="100%" class="img-fluid" border="0"
+                alt="Thank you! For your recent purchase with GM Food Packaging">
+            </td>
+        </tr>
+        <tr>
+            <td align="center" class="purchase-banner">
+                <h1>Thank you!</h1>
+                <p>For your recent purchase with GM Food Packaging</p>
+            </td>
+        </tr>
 
-        </td>
-    </tr>
-
-    <tr>
-    <td align="center" class=" mobile-only">
-    <a href="mailto:sales@gmpackaging.co.uk">
-    <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button4.png?v=1748341397" width="190" class="img-fluid"
-    alt="Email your enquiry"/>
-    </a>
-    </td>
-
-    <tr>
-        <td align="center" height="30">
-
-        </td>
-    </tr>
-
-    </table>
-    </td>
-    </tr>
-        </div>
     </div>
+
+    <div class="container-two">
+        
+
+        <!-- ################# Buttons 1 ################# -->
+
+        <tr>
+            <td align="center" height="30">
+
+            </td>
+        </tr>
+        
+        <tr>
+        <td align="center" class="grey-bg">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+        <tr>
+        <td align="right" class="btn-pad-right desktop-only">
+        <a href="tel:01912962007">
+        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button3.png?v=1748341397" width="190" class="img-fluid"
+        alt="Call our experts"/>
+        </a>
+        </td>
+        <td align="left" class="btn-pad-left desktop-only">
+        <a href="mailto:sales@gmpackaging.co.uk">
+        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button4.png?v=1748341397" width="190" class="img-fluid"
+        alt="Email your enquiry"/>
+        </a>
+        </td>
+        </tr>
+
+        <tr>
+        <td align="center" class="mobile-only">
+        <a href="tel:01912962007">
+        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button3.png?v=1748341397" width="190" class="img-fluid"
+        alt="Call our experts"/>
+        </a>
+        </td>
+        </tr>
+
+        <tr>
+            <td align="center" height="5">
+
+            </td>
+        </tr>
+
+        <tr>
+        <td align="center" class="mobile-only">
+        <a href="mailto:sales@gmpackaging.co.uk">
+        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button4.png?v=1748341397" width="190" class="img-fluid"
+        alt="Email your enquiry"/>
+        </a>
+        </td>
+
+        </table>
+        </td>
+        </tr>
+    </div>
+
+    <!-- ################# Buttons 2 ################# -->
+
+    <div class="container-two">
+
+        <tr>
+            <td class="no-font" height="30">
+
+            </td>
+        </tr>
+        
+        <tr>
+        <td align="center" class="grey-bg">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+        <tr>
+            <td class="">
+                <table class="btn-primary" align="center" cellspacing="0" cellpadding="0" border="0">
+
+                    <tr>
+                        <td class="td-pad-left" border="0">
+
+                                <tr>
+                                    <td align="center" class="arrow-pad-right">
+                                        <a href="https://www.dutypoint.com/case-studies/ballygowan-wwtw/">
+                                            <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/phone-icon-gm.png?v=1751553845" width="18">
+                                        </a>
+                                    </td>
+                                    <td align="center">
+                                        <a href="https://www.dutypoint.com/case-studies/ballygowan-wwtw/">
+                                            Call our experts
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+        <td align="center" class="mobile-only">
+        <a href="tel:01912962007">
+        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button3.png?v=1748341397" width="190" class="img-fluid"
+        alt="Call our experts"/>
+        </a>
+        </td>
+        </tr>
+
+        <tr>
+            <td align="center" height="5">
+
+            </td>
+        </tr>
+
+        <tr>
+        <td align="center" class="mobile-only">
+        <a href="mailto:sales@gmpackaging.co.uk">
+        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button4.png?v=1748341397" width="190" class="img-fluid"
+        alt="Email your enquiry"/>
+        </a>
+        </td>
+
+        </table>
+        </td>
+        </tr>
+    </div>
+
+</div>
     
 </body>
 </html>
