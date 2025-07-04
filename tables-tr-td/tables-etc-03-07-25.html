@@ -68,17 +68,43 @@
             font-weight: bold;
             line-height: 24px;
             background-color: var(--button-primary);
-            padding: 10px 26px;
+            padding: 10px;
+            width: 190px;
             border-radius: 10px;
         }
 
         .btn-primary a {
             text-decoration: none;
-             color: var(--project-black);
+            color: var(--project-black);
+        }
+
+        .btn-secondary {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+            background-color: var(--button-primary);
+            padding: 0px;
+            margin: 0 10px;
+            border-radius: 10px;
+        }
+
+        .inner {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .inner-least {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .btn-secondary a {
+            text-decoration: none;
+            color: var(--project-black);
         }
 
         .arrow-pad-right {
-            padding-right: 8px;
+            padding: 0 5px;
         }
 
         .main-banner {
@@ -92,11 +118,20 @@
         h1 {
             font-size: 70px;
             margin-bottom: 0;
+            margin-top: 10px;
         }
 
         .banner-text {
             font-size: 25px;
             margin-top: 10px;
+        }
+
+        .btn-text {
+            color: #150959 !important;
+        }
+
+        .two-col {
+            width: 48%;
         }
 
     @media (min-width: 530px) {
@@ -107,9 +142,19 @@
     }
 
     @media (max-width: 530px) {
+
         .desktop-only {
             display: none !important;
         }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .banner-text {
+            font-size: 20px;
+        }
+
     }
 
     </style>
@@ -127,7 +172,7 @@
                 <table class="main-banner" align="center" cellspacing="0" cellpadding="0" border="0">
 
                     <tr>
-                        <td class="td-pad-left" border="0">
+                        <td border="0">
 
                                 <tr>
                                     <td align="center">
@@ -143,18 +188,6 @@
             </td>
         </tr>
 
-        <tr>
-            <td align="center">
-                <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/banner1_242ed54f-6f80-48e4-b968-ab4d2b14c770.jpg?v=1748009191" width="100%" class="img-fluid" border="0"
-                alt="Thank you! For your recent purchase with GM Food Packaging">
-            </td>
-        </tr>
-        <tr>
-            <td align="center" class="purchase-banner">
-                <h1>Thank you!</h1>
-                <p>For your recent purchase with GM Food Packaging</p>
-            </td>
-        </tr>
 
     </div>
 
@@ -216,7 +249,7 @@
         </tr>
     </div>
 
-    <!-- ################# Buttons 2 ################# -->
+
 
     <div class="container-two">
 
@@ -230,61 +263,194 @@
         <td align="center" class="grey-bg">
         <table cellpadding="0" cellspacing="0" border="0" width="100%">
 
+        <!-- ################# Mobile buttons ################# -->
+
         <tr>
-            <td class="">
-                <table class="btn-primary" align="center" cellspacing="0" cellpadding="0" border="0">
+            <td align="center" class="inner desktop-only">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+                        <tr>
+                            <td align="center">
+                                <table class="two-col" align="left" cellspacing="0" cellpadding="0"
+                                        border="0">
+
+                                    <tr>
+                                        <td class="">
+                                            <table class="btn-primary" align="right"
+                                                    cellspacing="0"
+                                                    cellpadding="0"
+                                                    border="0">
+
+                                                <tr>
+                                                    <td class="td-pad-left">
+                                                        <table align="center"
+                                                                cellspacing="0"
+                                                                cellpadding="0"
+                                                                border="0">
+
+                                                            <tr>
+                                                                <td align="center" class="arrow-pad-right">
+                                                                    <a href="https://www.dutypoint.com/products/waste-water-pumping-products/vortech-poly-pump-station/">
+                                                                        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/phone-icon-gm.png?v=1751553845"
+                                                                                width="18">
+                                                                    </a>
+                                                                </td>
+                                                                <td align="center" class="white">
+                                                                    <a href="https://www.dutypoint.com/products/waste-water-pumping-products/vortech-poly-pump-station/">
+                                                                        Call our experts
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="no-font white-bg" height="15">
+
+                                        </td>
+                                    </tr>
+
+                                </table>
+
+                                <table class="two-col" align="right" cellspacing="0"
+                                        cellpadding="0"
+                                        border="0">
+
+                                    <tr>
+                                        <td class="">
+                                            <table class="btn-primary" align="left"
+                                                    cellspacing="0"
+                                                    cellpadding="0"
+                                                    border="0">
+
+                                                <tr>
+                                                    <td class="td-pad-left">
+                                                        <table align="center"
+                                                                cellspacing="0"
+                                                                cellpadding="0"
+                                                                border="0">
+
+                                                            <tr>
+                                                                <td align="center" class="arrow-pad-right">
+                                                                    <a href="https://www.dutypoint.com/products/waste-water-pumping-products/vortech-poly-pump-station/">
+                                                                        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/envelope-icon-gm.png?v=1751553844"
+                                                                                width="18">
+                                                                    </a>
+                                                                </td>
+                                                                <td align="center" class="white">
+                                                                    <a href="https://www.dutypoint.com/products/waste-water-pumping-products/vortech-poly-pump-station/">
+                                                                        Email your enquiry
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" class="inner mobile-only">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
 
                     <tr>
-                        <td class="td-pad-left" border="0">
+                        <td class="">
+                            <table class="btn-primary" align="center"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0">
 
                                 <tr>
-                                    <td align="center" class="arrow-pad-right">
-                                        <a href="https://www.dutypoint.com/case-studies/ballygowan-wwtw/">
-                                            <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/phone-icon-gm.png?v=1751553845" width="18">
-                                        </a>
-                                    </td>
-                                    <td align="center">
-                                        <a href="https://www.dutypoint.com/case-studies/ballygowan-wwtw/">
-                                            Call our experts
-                                        </a>
+                                    <td class="td-pad-left">
+                                        <table align="center"
+                                                cellspacing="0"
+                                                cellpadding="0"
+                                                border="0">
+
+                                            <tr>
+                                                <td align="center" class="arrow-pad-right">
+                                                    <a href="https://www.dutypoint.com/products/waste-water-pumping-products/vortech-poly-pump-station/">
+                                                        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/envelope-icon-gm.png?v=1751553844"
+                                                                width="18">
+                                                    </a>
+                                                </td>
+                                                <td align="center" class="white">
+                                                    <a href="https://www.dutypoint.com/products/waste-water-pumping-products/vortech-poly-pump-station/">
+                                                        Call our experts
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                        </table>
                                     </td>
                                 </tr>
 
                             </table>
                         </td>
                     </tr>
+
+                    <tr>
+                        <td class="no-font" height="15">
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="">
+                            <table class="btn-primary" align="center"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0">
+
+                                <tr>
+                                    <td class="td-pad-left">
+                                        <table align="center"
+                                                cellspacing="0"
+                                                cellpadding="0"
+                                                border="0">
+
+                                            <tr>
+                                                <td align="center" class="arrow-pad-right">
+                                                    <a href="https://www.dutypoint.com/products/waste-water-pumping-products/vortech-poly-pump-station/">
+                                                        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/envelope-icon-gm.png?v=1751553844"
+                                                                width="18">
+                                                    </a>
+                                                </td>
+                                                <td align="center" class="white">
+                                                    <a href="https://www.dutypoint.com/products/waste-water-pumping-products/vortech-poly-pump-station/">
+                                                        Email your enquiry
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
                 </table>
             </td>
         </tr>
 
-        <tr>
-        <td align="center" class="mobile-only">
-        <a href="tel:01912962007">
-        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button3.png?v=1748341397" width="190" class="img-fluid"
-        alt="Call our experts"/>
-        </a>
-        </td>
-        </tr>
-
-        <tr>
-            <td align="center" height="5">
-
-            </td>
-        </tr>
-
-        <tr>
-        <td align="center" class="mobile-only">
-        <a href="mailto:sales@gmpackaging.co.uk">
-        <img src="https://cdn.shopify.com/s/files/1/2466/4549/files/button4.png?v=1748341397" width="190" class="img-fluid"
-        alt="Email your enquiry"/>
-        </a>
-        </td>
-
-        </table>
-        </td>
-        </tr>
     </div>
-
 </div>
     
 </body>
